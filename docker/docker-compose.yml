@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  app:
+    image: 'backend'
+    build:
+      context: ../mgr-back
+    container_name: backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db/postgres
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_SQL_INIT_MODE=always
+      - SPRING_JPA_HIBERNATE_DDL-AUTO=create-drop
+
+  db:
+    image: 'postgres:14'
+    ports:
+      - "5433:5432"
+    container_name: db
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  front:
+    image: 'frontend'
+    build:
+      context: ../mgr-front
+    ports:
+      - "4200:80"
+    container_name: frontend
+    depends_on:
+      - app
+      - db

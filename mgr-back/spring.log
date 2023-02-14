@@ -1,0 +1,841 @@
+2023-02-05T18:09:08.595+01:00  INFO 39176 --- [main] mgr.backend.Application         : Starting DemoApplication using Java 17.0.4.1 with PID 39176 (C:\Studia\mgr\mgr21\demo (1)\demo\target\classes started by pbrzo in C:\Studia\mgr\mgr21\demo (1)\demo)
+2023-02-05T18:09:08.601+01:00  INFO 39176 --- [main] mgr.backend.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-05T18:09:09.025+01:00  INFO 39176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-05T18:09:09.070+01:00  INFO 39176 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2023-02-05T18:09:09.426+01:00  INFO 39176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-05T18:09:09.433+01:00  INFO 39176 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-05T18:09:09.433+01:00  INFO 39176 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-05T18:09:09.510+01:00  INFO 39176 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-05T18:09:09.510+01:00  INFO 39176 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 880 ms
+2023-02-05T18:09:09.602+01:00  INFO 39176 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-02-05T18:09:09.603+01:00  INFO 39176 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-02-05T18:09:09.603+01:00  INFO 39176 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-02-05T18:09:09.828+01:00  INFO 39176 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/defaultdb (PostgreSQL 14.6)
+2023-02-05T18:09:09.861+01:00  INFO 39176 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.020s)
+2023-02-05T18:09:09.906+01:00  INFO 39176 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "defaultdb": 5
+2023-02-05T18:09:09.906+01:00  INFO 39176 --- [main] o.f.core.internal.command.DbMigrate      : Schema "defaultdb" is up to date. No migration necessary.
+2023-02-05T18:09:09.939+01:00  INFO 39176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-05T18:09:10.096+01:00  INFO 39176 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1653b84e
+2023-02-05T18:09:10.097+01:00  INFO 39176 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-05T18:09:10.121+01:00  INFO 39176 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-05T18:09:10.149+01:00  INFO 39176 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2023-02-05T18:09:10.248+01:00  WARN 39176 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-05T18:09:10.342+01:00  INFO 39176 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-05T18:09:10.841+01:00  INFO 39176 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-05T18:09:10.847+01:00  INFO 39176 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-05T18:09:11.100+01:00  WARN 39176 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-05T18:09:11.274+01:00  INFO 39176 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-02-05T18:09:11.635+01:00  INFO 39176 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-05T18:09:11.642+01:00  INFO 39176 --- [main] mgr.backend.Application         : Started DemoApplication in 3.323 seconds (process running for 3.688)
+2023-02-05T18:09:19.963+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8321
+2023-02-05T18:09:19.963+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:19.964+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8321
+2023-02-05T18:09:19.986+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:19.986+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:19.986+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:19.989+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:09:19.989+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:19.990+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:19.993+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:09:19.993+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:19.994+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:09:19.997+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:09:19.997+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:19.997+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:09:20.000+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:09:20.000+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:20.000+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:09:20.004+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:20.004+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:20.005+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:20.009+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:20.009+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:20.009+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:20.012+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:09:20.012+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:20.012+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:09:20.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 9
+2023-02-05T18:09:20.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:20.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 9
+2023-02-05T18:09:21.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:21.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:21.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:22.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:22.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:22.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:23.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:23.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:23.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:24.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:24.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:24.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:25.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:25.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:25.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:26.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:26.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:26.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:27.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:27.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:27.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:28.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:28.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:28.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:29.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:29.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:29.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:30.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:30.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:30.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:31.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:31.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:31.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:32.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:32.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:32.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:33.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:33.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:33.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:34.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:34.666+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:34.666+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:35.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:35.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:35.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 9
+2023-02-05T18:09:36.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:36.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:36.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:37.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:37.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:37.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:38.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:38.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:38.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:39.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:39.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:39.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 9
+2023-02-05T18:09:40.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:40.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:40.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:41.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:41.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:41.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:42.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:42.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:42.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:43.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:43.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:43.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:44.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:44.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:44.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:45.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:09:45.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:45.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:09:46.644+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:46.644+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:46.644+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:47.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:09:47.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:47.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 3
+2023-02-05T18:09:48.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:48.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:48.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:49.644+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:49.644+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:49.645+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:50.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:50.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:50.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:51.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:09:51.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:51.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 5
+2023-02-05T18:09:52.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:09:52.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:52.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:09:53.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:09:53.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:53.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:09:54.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:09:54.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:54.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:09:55.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:55.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:55.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:56.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:56.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:56.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:09:57.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:57.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:57.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:58.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:09:58.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:58.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:09:59.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:09:59.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:09:59.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:00.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:00.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:00.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:01.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:01.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:01.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:02.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:10:02.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:02.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:03.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:03.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:03.666+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:04.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:04.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:04.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:05.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:05.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:05.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:06.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:06.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:06.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:07.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:07.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:07.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:08.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:08.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:08.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:09.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 9
+2023-02-05T18:10:09.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:09.666+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:10:10.667+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 11
+2023-02-05T18:10:10.668+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:10.668+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 11
+2023-02-05T18:10:11.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:10:11.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:11.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:12.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:10:12.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:12.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 3
+2023-02-05T18:10:13.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:10:13.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:13.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:14.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:14.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:14.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:15.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:15.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:15.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:16.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 8
+2023-02-05T18:10:16.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:16.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:17.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:17.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:17.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:18.647+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:18.647+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:18.647+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:19.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:19.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:19.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:20.645+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:20.645+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:20.645+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:21.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:21.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:21.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:22.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:22.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:22.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:23.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:23.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:23.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:24.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:24.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:24.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:25.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:25.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:25.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:26.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:26.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:26.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:27.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:27.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:27.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:28.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:28.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:28.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:29.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:29.665+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:29.666+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:30.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:10:30.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:30.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 4
+2023-02-05T18:10:31.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:31.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:31.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:32.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:32.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:32.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:33.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:33.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:33.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:34.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:34.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:34.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:35.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:35.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:35.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:36.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:36.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:36.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:37.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:37.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:37.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:38.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:38.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:38.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:39.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:39.649+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:39.650+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:40.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:40.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:40.664+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:41.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:41.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:41.658+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:42.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:42.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:42.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:43.653+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:43.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:43.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:10:44.651+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:44.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:44.652+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:45.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:45.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:45.663+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:46.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:46.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:46.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:47.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:10:47.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:47.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7
+2023-02-05T18:10:48.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:48.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:48.648+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:49.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:10:49.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:49.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 4
+2023-02-05T18:10:50.661+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:50.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:50.662+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:51.654+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:10:51.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:51.655+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:10:52.659+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:10:52.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:52.660+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:10:53.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:10:53.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:53.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:10:54.656+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:10:54.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:10:54.657+01:00  INFO 39176 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 3
+2023-02-05T18:10:55.560+01:00  INFO 39176 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-05T18:10:55.561+01:00  INFO 39176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-05T18:10:55.562+01:00  INFO 39176 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-05T18:49:27.735+01:00  INFO 11368 --- [main] mgr.backend.Application         : Starting DemoApplication using Java 17.0.4.1 with PID 11368 (C:\Studia\mgr\mgr21\demo (1)\demo\target\classes started by pbrzo in C:\Studia\mgr\mgr21\demo (1)\demo)
+2023-02-05T18:49:27.736+01:00  INFO 11368 --- [main] mgr.backend.Application         : No active profile set, falling back to 1 default profile: "default"
+2023-02-05T18:49:28.132+01:00  INFO 11368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-05T18:49:28.182+01:00  INFO 11368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2023-02-05T18:49:28.529+01:00  INFO 11368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-05T18:49:28.535+01:00  INFO 11368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-05T18:49:28.535+01:00  INFO 11368 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-05T18:49:28.606+01:00  INFO 11368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-05T18:49:28.606+01:00  INFO 11368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 842 ms
+2023-02-05T18:49:28.701+01:00  INFO 11368 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-02-05T18:49:28.702+01:00  INFO 11368 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-02-05T18:49:28.702+01:00  INFO 11368 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-02-05T18:49:28.808+01:00  INFO 11368 --- [main] o.f.c.i.database.base.BaseDatabaseType   : Database: jdbc:postgresql://localhost:5432/defaultdb (PostgreSQL 14.6)
+2023-02-05T18:49:28.837+01:00  INFO 11368 --- [main] o.f.core.internal.command.DbValidate     : Successfully validated 6 migrations (execution time 00:00.016s)
+2023-02-05T18:49:28.877+01:00  INFO 11368 --- [main] o.f.core.internal.command.DbMigrate      : Current version of schema "defaultdb": 5
+2023-02-05T18:49:28.878+01:00  INFO 11368 --- [main] o.f.core.internal.command.DbMigrate      : Schema "defaultdb" is up to date. No migration necessary.
+2023-02-05T18:49:28.911+01:00  INFO 11368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-05T18:49:28.952+01:00  INFO 11368 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@29962b2f
+2023-02-05T18:49:28.953+01:00  INFO 11368 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-05T18:49:28.974+01:00  INFO 11368 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-05T18:49:29.002+01:00  INFO 11368 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2023-02-05T18:49:29.098+01:00  WARN 11368 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-05T18:49:29.196+01:00  INFO 11368 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-02-05T18:49:29.722+01:00  INFO 11368 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-05T18:49:29.728+01:00  INFO 11368 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-05T18:49:34.454+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles deleted
+2023-02-05T18:49:34.520+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 0
+2023-02-05T18:49:34.568+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 100
+2023-02-05T18:49:34.613+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 200
+2023-02-05T18:49:34.651+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 300
+2023-02-05T18:49:34.687+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 400
+2023-02-05T18:49:34.724+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 500
+2023-02-05T18:49:34.765+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 600
+2023-02-05T18:49:34.791+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 700
+2023-02-05T18:49:34.817+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 800
+2023-02-05T18:49:34.842+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 900
+2023-02-05T18:49:34.867+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1000
+2023-02-05T18:49:34.897+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1100
+2023-02-05T18:49:34.924+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1200
+2023-02-05T18:49:34.951+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1300
+2023-02-05T18:49:34.978+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1400
+2023-02-05T18:49:35.004+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1500
+2023-02-05T18:49:35.037+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1600
+2023-02-05T18:49:35.062+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1700
+2023-02-05T18:49:35.088+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1800
+2023-02-05T18:49:35.120+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 1900
+2023-02-05T18:49:35.152+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2000
+2023-02-05T18:49:35.191+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2100
+2023-02-05T18:49:35.219+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2200
+2023-02-05T18:49:35.248+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2300
+2023-02-05T18:49:35.276+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2400
+2023-02-05T18:49:35.305+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2500
+2023-02-05T18:49:35.334+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2600
+2023-02-05T18:49:35.363+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2700
+2023-02-05T18:49:35.391+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2800
+2023-02-05T18:49:35.427+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 2900
+2023-02-05T18:49:35.455+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3000
+2023-02-05T18:49:35.483+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3100
+2023-02-05T18:49:35.513+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3200
+2023-02-05T18:49:35.541+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3300
+2023-02-05T18:49:35.568+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3400
+2023-02-05T18:49:35.596+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3500
+2023-02-05T18:49:35.631+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3600
+2023-02-05T18:49:35.675+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3700
+2023-02-05T18:49:35.710+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3800
+2023-02-05T18:49:35.739+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 3900
+2023-02-05T18:49:35.769+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4000
+2023-02-05T18:49:35.799+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4100
+2023-02-05T18:49:35.828+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4200
+2023-02-05T18:49:35.857+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4300
+2023-02-05T18:49:35.884+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4400
+2023-02-05T18:49:35.909+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4500
+2023-02-05T18:49:35.939+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4600
+2023-02-05T18:49:35.968+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4700
+2023-02-05T18:49:35.998+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4800
+2023-02-05T18:49:36.030+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 4900
+2023-02-05T18:49:36.067+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5000
+2023-02-05T18:49:36.101+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5100
+2023-02-05T18:49:36.130+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5200
+2023-02-05T18:49:36.158+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5300
+2023-02-05T18:49:36.185+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5400
+2023-02-05T18:49:36.213+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5500
+2023-02-05T18:49:36.240+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5600
+2023-02-05T18:49:36.283+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5700
+2023-02-05T18:49:36.313+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5800
+2023-02-05T18:49:36.344+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 5900
+2023-02-05T18:49:36.381+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6000
+2023-02-05T18:49:36.416+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6100
+2023-02-05T18:49:36.452+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6200
+2023-02-05T18:49:36.484+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6300
+2023-02-05T18:49:36.517+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6400
+2023-02-05T18:49:36.547+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6500
+2023-02-05T18:49:36.576+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6600
+2023-02-05T18:49:36.605+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6700
+2023-02-05T18:49:36.633+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6800
+2023-02-05T18:49:36.661+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 6900
+2023-02-05T18:49:36.693+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7000
+2023-02-05T18:49:36.723+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7100
+2023-02-05T18:49:36.752+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7200
+2023-02-05T18:49:36.784+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7300
+2023-02-05T18:49:36.812+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7400
+2023-02-05T18:49:36.839+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7500
+2023-02-05T18:49:36.868+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7600
+2023-02-05T18:49:36.899+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7700
+2023-02-05T18:49:36.926+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7800
+2023-02-05T18:49:36.954+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 7900
+2023-02-05T18:49:36.988+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8000
+2023-02-05T18:49:37.017+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8100
+2023-02-05T18:49:37.044+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8200
+2023-02-05T18:49:37.071+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8300
+2023-02-05T18:49:37.102+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8400
+2023-02-05T18:49:37.132+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8500
+2023-02-05T18:49:37.160+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8600
+2023-02-05T18:49:37.187+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8700
+2023-02-05T18:49:37.214+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8800
+2023-02-05T18:49:37.246+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 8900
+2023-02-05T18:49:37.274+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9000
+2023-02-05T18:49:37.305+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9100
+2023-02-05T18:49:37.337+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9200
+2023-02-05T18:49:37.369+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9300
+2023-02-05T18:49:37.399+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9400
+2023-02-05T18:49:37.427+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9500
+2023-02-05T18:49:37.458+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9600
+2023-02-05T18:49:37.490+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9700
+2023-02-05T18:49:37.523+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9800
+2023-02-05T18:49:37.553+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : Tiles created: 9900
+2023-02-05T18:49:45.536+01:00  INFO 11368 --- [main] c.example.demo.service.TileServiceImpl   : RPIS deleted
+2023-02-05T18:49:45.972+01:00  WARN 11368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-05T18:49:46.160+01:00  INFO 11368 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-02-05T18:49:46.531+01:00  INFO 11368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-02-05T18:49:46.539+01:00  INFO 11368 --- [main] mgr.backend.Application         : Started DemoApplication in 19.075 seconds (process running for 19.419)
+2023-02-05T18:49:54.257+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7718
+2023-02-05T18:49:54.257+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:54.258+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 7719
+2023-02-05T18:49:55.292+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:49:55.292+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:55.292+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 3
+2023-02-05T18:49:56.306+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:49:56.307+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:56.307+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:49:57.318+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:49:57.319+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:57.319+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:49:58.331+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:49:58.332+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:58.332+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:49:59.343+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:49:59.344+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:49:59.344+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:50:00.356+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:00.356+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:00.356+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:50:01.373+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:01.373+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:01.374+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 6
+2023-02-05T18:50:02.383+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:02.383+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:02.383+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:50:03.392+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:03.392+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:03.393+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:50:04.404+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:04.405+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:04.405+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 2
+2023-02-05T18:50:04.815+01:00  INFO 11368 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-02-05T18:50:04.815+01:00  INFO 11368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-02-05T18:50:04.816+01:00  INFO 11368 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-02-05T18:50:05.414+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:50:05.414+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 7
+2023-02-05T18:50:05.426+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 13
+2023-02-05T18:50:06.434+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:50:06.435+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 16
+2023-02-05T18:50:06.457+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 23
+2023-02-05T18:50:07.471+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:07.472+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 13
+2023-02-05T18:50:07.482+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 12
+2023-02-05T18:50:08.502+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:50:08.502+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 12
+2023-02-05T18:50:08.518+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 18
+2023-02-05T18:50:09.537+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:09.537+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 13
+2023-02-05T18:50:09.552+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 20
+2023-02-05T18:50:10.568+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 7
+2023-02-05T18:50:10.569+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 12
+2023-02-05T18:50:10.584+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 22
+2023-02-05T18:50:11.596+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:11.597+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 11
+2023-02-05T18:50:11.616+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 24
+2023-02-05T18:50:12.626+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:12.627+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:12.642+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 21
+2023-02-05T18:50:13.654+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:50:13.654+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 13
+2023-02-05T18:50:13.666+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 16
+2023-02-05T18:50:14.685+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 5
+2023-02-05T18:50:14.685+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:14.698+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 17
+2023-02-05T18:50:15.712+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:50:15.712+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:15.724+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 15
+2023-02-05T18:50:16.742+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:16.742+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:16.753+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 12
+2023-02-05T18:50:17.772+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:17.772+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 13
+2023-02-05T18:50:17.784+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 13
+2023-02-05T18:50:18.801+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:18.801+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:18.810+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:50:19.818+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:19.818+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 8
+2023-02-05T18:50:19.826+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 9
+2023-02-05T18:50:20.833+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:20.834+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 12
+2023-02-05T18:50:20.841+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:50:21.849+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:21.849+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:21.861+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 12
+2023-02-05T18:50:22.877+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:22.877+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:22.890+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 14
+2023-02-05T18:50:23.906+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:23.906+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 10
+2023-02-05T18:50:23.914+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 8
+2023-02-05T18:50:24.923+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:50:24.923+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 16
+2023-02-05T18:50:24.934+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 12
+2023-02-05T18:50:25.954+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:25.954+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 20
+2023-02-05T18:50:25.962+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:50:26.968+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:26.968+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 15
+2023-02-05T18:50:26.977+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:50:27.996+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:50:27.996+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 18
+2023-02-05T18:50:28.007+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 12
+2023-02-05T18:50:29.022+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:29.023+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 18
+2023-02-05T18:50:29.035+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 13
+2023-02-05T18:50:30.053+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 2
+2023-02-05T18:50:30.053+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 16
+2023-02-05T18:50:30.064+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 10
+2023-02-05T18:50:31.074+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 3
+2023-02-05T18:50:31.075+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 19
+2023-02-05T18:50:31.087+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 15
+2023-02-05T18:50:32.107+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:32.108+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 17
+2023-02-05T18:50:32.123+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 20
+2023-02-05T18:50:33.133+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 5
+2023-02-05T18:50:33.133+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 14
+2023-02-05T18:50:33.148+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 18
+2023-02-05T18:50:34.164+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 5
+2023-02-05T18:50:34.164+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 15
+2023-02-05T18:50:34.175+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 15
+2023-02-05T18:50:35.193+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 4
+2023-02-05T18:50:35.193+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 16
+2023-02-05T18:50:35.207+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 18
+2023-02-05T18:50:36.225+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 6
+2023-02-05T18:50:36.226+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 12
+2023-02-05T18:50:36.238+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 17
+2023-02-05T18:50:37.252+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : Elapsed time fetch 1
+2023-02-05T18:50:37.252+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : requestsFromLastSecondCount 0
+2023-02-05T18:50:37.252+01:00  INFO 11368 --- [scheduling-1] c.e.demo.service.PositionServiceImpl     : time## 1
+2023-02-05T18:50:38.067+01:00  INFO 11368 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-05T18:50:38.068+01:00  INFO 11368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-05T18:50:38.070+01:00  INFO 11368 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-02-06T20:32:22.421+01:00  INFO 18420 --- [main] mgr.backend.Application                  : Starting Application using Java 17.0.4.1 with PID 18420 (C:\Studia\mgr\mgr21\demo (1)\demo\target\classes started by pbrzo in C:\Studia\mgr\mgr21\demo (1)\demo)
+2023-02-06T20:32:22.423+01:00  INFO 18420 --- [main] mgr.backend.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-02-06T20:32:22.832+01:00  INFO 18420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06T20:32:22.878+01:00  INFO 18420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2023-02-06T20:32:23.238+01:00  INFO 18420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-06T20:32:23.251+01:00  INFO 18420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06T20:32:23.252+01:00  INFO 18420 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-06T20:32:23.321+01:00  INFO 18420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-06T20:32:23.321+01:00  INFO 18420 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 870 ms
+2023-02-06T20:32:23.408+01:00  INFO 18420 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-02-06T20:32:23.408+01:00  INFO 18420 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-02-06T20:32:23.408+01:00  INFO 18420 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-02-06T20:32:23.474+01:00  WARN 18420 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+2023-02-06T20:32:23.476+01:00  INFO 18420 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06T20:32:23.484+01:00  INFO 18420 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-06T20:32:23.496+01:00 ERROR 18420 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at mgr.backend.Application.main(Application.java:22) ~[classes/:na]
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:659) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:434) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.connect(Driver.java:291) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:144) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48) ~[flyway-core-9.5.1.jar:na]
+	... 24 common frames omitted
+
+2023-02-06T20:37:52.309+01:00  INFO 22328 --- [main] mgr.backend.Application                  : Starting Application using Java 17.0.4.1 with PID 22328 (C:\Studia\mgr\mgr21\demo (1)\demo\target\classes started by pbrzo in C:\Studia\mgr\mgr21\demo (1)\demo)
+2023-02-06T20:37:52.311+01:00  INFO 22328 --- [main] mgr.backend.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-02-06T20:37:52.754+01:00  INFO 22328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06T20:37:52.802+01:00  INFO 22328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 5 JPA repository interfaces.
+2023-02-06T20:37:53.161+01:00  INFO 22328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-06T20:37:53.167+01:00  INFO 22328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06T20:37:53.168+01:00  INFO 22328 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-06T20:37:53.240+01:00  INFO 22328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-06T20:37:53.241+01:00  INFO 22328 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 900 ms
+2023-02-06T20:37:53.328+01:00  INFO 22328 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-02-06T20:37:53.328+01:00  INFO 22328 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-02-06T20:37:53.328+01:00  INFO 22328 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-02-06T20:37:53.393+01:00  WARN 22328 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+2023-02-06T20:37:53.394+01:00  INFO 22328 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06T20:37:53.404+01:00  INFO 22328 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-06T20:37:53.416+01:00 ERROR 22328 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at mgr.backend.Application.main(Application.java:22) ~[classes/:na]
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "postgres"
+----------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "postgres"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:659) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:434) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.connect(Driver.java:291) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:144) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48) ~[flyway-core-9.5.1.jar:na]
+	... 24 common frames omitted
+
+2023-02-06T20:38:24.346+01:00  INFO 42664 --- [main] mgr.backend.Application                  : Starting Application using Java 17.0.4.1 with PID 42664 (C:\Studia\mgr\mgr21\demo (1)\demo\target\classes started by pbrzo in C:\Studia\mgr\mgr21\demo (1)\demo)
+2023-02-06T20:38:24.348+01:00  INFO 42664 --- [main] mgr.backend.Application                  : No active profile set, falling back to 1 default profile: "default"
+2023-02-06T20:38:24.775+01:00  INFO 42664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-06T20:38:24.826+01:00  INFO 42664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45 ms. Found 5 JPA repository interfaces.
+2023-02-06T20:38:25.180+01:00  INFO 42664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-02-06T20:38:25.186+01:00  INFO 42664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-02-06T20:38:25.187+01:00  INFO 42664 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2023-02-06T20:38:25.258+01:00  INFO 42664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-02-06T20:38:25.259+01:00  INFO 42664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 882 ms
+2023-02-06T20:38:25.356+01:00  INFO 42664 --- [main] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 9.5.1 by Redgate
+2023-02-06T20:38:25.356+01:00  INFO 42664 --- [main] o.f.c.internal.license.VersionPrinter    : See what's new here: https://flywaydb.org/documentation/learnmore/releaseNotes#9.5.1
+2023-02-06T20:38:25.356+01:00  INFO 42664 --- [main] o.f.c.internal.license.VersionPrinter    : 
+2023-02-06T20:38:25.421+01:00  WARN 42664 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "compose-postgres"
+------------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "compose-postgres"
+
+2023-02-06T20:38:25.423+01:00  INFO 42664 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-02-06T20:38:25.431+01:00  INFO 42664 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-02-06T20:38:25.443+01:00 ERROR 42664 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Unable to obtain connection from database: FATAL: password authentication failed for user "compose-postgres"
+------------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "compose-postgres"
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1751) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:313) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1130) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:905) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.2.jar:6.0.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.0.jar:3.0.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.0.jar:3.0.0]
+	at mgr.backend.Application.main(Application.java:22) ~[classes/:na]
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: FATAL: password authentication failed for user "compose-postgres"
+------------------------------------------------------------------------------------------------------------
+SQL State  : 28P01
+Error Code : 0
+Message    : FATAL: password authentication failed for user "compose-postgres"
+
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:60) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.internal.jdbc.JdbcConnectionFactory.<init>(JdbcConnectionFactory.java:75) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.FlywayExecutor.execute(FlywayExecutor.java:146) ~[flyway-core-9.5.1.jar:na]
+	at org.flywaydb.core.Flyway.migrate(Flyway.java:128) ~[flyway-core-9.5.1.jar:na]
+	at org.springframework.boot.autoconfigure.flyway.FlywayMigrationInitializer.afterPropertiesSet(FlywayMigrationInitializer.java:66) ~[spring-boot-autoconfigure-3.0.0.jar:3.0.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1797) ~[spring-beans-6.0.2.jar:6.0.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1747) ~[spring-beans-6.0.2.jar:6.0.2]
+	... 18 common frames omitted
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "compose-postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:659) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:180) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:247) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.makeConnection(Driver.java:434) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.Driver.connect(Driver.java:291) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.springframework.jdbc.datasource.SimpleDriverDataSource.getConnectionFromDriver(SimpleDriverDataSource.java:144) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-6.0.2.jar:6.0.2]
+	at org.flywaydb.core.internal.jdbc.JdbcUtils.openConnection(JdbcUtils.java:48) ~[flyway-core-9.5.1.jar:na]
+	... 24 common frames omitted
+

@@ -1,0 +1,67 @@
+<h2>Strefy: </h2>
+<div>
+  <ul class="styled-table">
+    <li *ngFor="let zone of zones">
+      <div>
+        <span class="zone">Kod: {{zone.code}}</span>
+        <span class="zone">Start X: {{zone.posX}}</span>
+        <span class="zone">Start Y: {{zone.posY}}</span>
+        <span class="zone">Wysokość: {{zone.zoneHeight}}</span>
+        <span class="zone">Szerokość: {{zone.zoneWidth}}</span>
+        <span class="zone">Wystąpenia obiektów: {{zone.zoneOccurences}}</span>
+        <button type="zone-button" title="delete zone" (click)="delete(zone); refresh()">x</button>
+      </div>
+
+    </li>
+  </ul>
+</div>
+<div>
+
+  <form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Kod nowej strefy:</mat-label>
+      <input matInput type="text" id="new-zone" #zoneCode>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Start X nowej strefy:</mat-label>
+      <input matInput type="number" for="new-zone" #zonePosX>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Start Y nowej strefy:</mat-label>
+      <input matInput type="number" for="new-zone" #zonePosY>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <select matNativeControl required #zoneType>
+        <option value="circ">Koło</option>
+        <option value="rect">Prostokąt</option>
+      </select>
+    </mat-form-field>
+    <div *ngIf="zoneType.value === 'circ'">
+      <mat-form-field class="example-full-width">
+        <mat-label>Promień nowej strefy:</mat-label>
+        <input matInput type="number" for="new-zone" #zoneWidth>
+      </mat-form-field>
+      <button type="button" class="add-button" (click)="addCirc(zoneCode.value, Number(zonePosX.value),
+   Number(zonePosY.value), Number(zoneWidth.value), zoneType.value); refresh() ">
+        Dodaj strefę
+      </button>
+    </div>
+    <div *ngIf="zoneType.value === 'rect'">
+      <mat-form-field class="example-full-width">
+        <mat-label>Wysokość nowej strefy:</mat-label>
+        <input matInput type="number" for="new-zone" #zoneHeight>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Szerokość nowej strefy:</mat-label>
+        <input matInput type="number" for="new-zone" #zoneWidth>
+      </mat-form-field>
+      <button type="button" class="add-button" (click)="addRect(zoneCode.value, Number(zonePosX.value),
+   Number(zonePosY.value), Number(zoneHeight.value), Number(zoneWidth.value), zoneType.value); refresh() ">
+        Dodaj strefę
+      </button>
+    </div>
+
+  </form>
+
+
+</div>

@@ -1,0 +1,8 @@
+<div class="scroller">
+
+  <h2>Spis pozycji</h2>
+  <button type="button" class="clear"
+          (click)="messageService.clear()">Wyczyść spis pozycji</button>
+  <div  class="scrolled" *ngFor='let message of messageService.messages'> {{message}} </div>
+
+</div>

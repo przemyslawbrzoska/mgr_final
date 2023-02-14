@@ -1,0 +1,15 @@
+
+<div style="display: flex; flex-grow: grow">
+  <div *ngIf="trace$ | async as trace">
+    <plotly-plot
+      [data]="[trace]"
+      [layout]="layout">
+    </plotly-plot>
+  </div>
+  <app-messages></app-messages>
+</div>
+<h2>Import mapy</h2>
+<app-file-upload></app-file-upload>
+<h2>Import pokrycia czujników</h2>
+<app-file-upload></app-file-upload>
+<app-zones></app-zones>
