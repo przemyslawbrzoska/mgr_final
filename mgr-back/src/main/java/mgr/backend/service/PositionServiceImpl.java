@@ -72,7 +72,7 @@ public class PositionServiceImpl implements PositionService {
 
 
     @Override
-    @Scheduled(fixedDelay = 1000)
+    @Scheduled(fixedRate = 1000)
     public void runPositionCalculation() {
         StopWatch watch = new StopWatch();
 
